@@ -1,37 +1,12 @@
 import { Slot } from "expo-router";
-import { ThirdwebProvider } from "@thirdweb-dev/react";
+import { ThirdwebProvider } from "@thirdweb-dev/react-native";
 import { Sepolia } from "@thirdweb-dev/chains";
 
-import { useFonts } from "expo-font";
-import * as SplashScreen from "expo-splash-screen";
-import { useEffect } from "react";
-
-import FontAwesome from "@expo/vector-icons/FontAwesome";
-
-SplashScreen.preventAutoHideAsync();
-
 export default function RootLayout() {
-  const [loaded, error] = useFonts({
-    SpaceMono: require("../../assets/fonts/SpaceMono-Regular.ttf"),
-    ...FontAwesome.font,
-  });
-
-  useEffect(() => {
-    if (error) throw error;
-  }, [error]);
-
-  useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded]);
-
-  if (!loaded) return null;
-
   return (
     <ThirdwebProvider 
       activeChain={Sepolia}
-      clientId="19dcd31493b4570ba0238aa33c9c9b1"
+      clientId="e2ee66d4-5a08-4349-86ab-5b6d9e71baf0"   // ✔ correct place
     >
       <Slot />
     </ThirdwebProvider>

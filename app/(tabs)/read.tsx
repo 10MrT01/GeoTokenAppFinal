@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
 
 // FIX 1: Import ALL v4 hooks from '@thirdweb-dev/react-native'
 // useAddress replaces useActiveAccount
-import { useAddress, useContract, useContractRead } from "@thirdweb-dev/react";
+import { useAddress, useContract, useContractRead } from "@thirdweb-dev/react-native";
  
 
 // FIX 2: Import the exported address string we just fixed in the previous step

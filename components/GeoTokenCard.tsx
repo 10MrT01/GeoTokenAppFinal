@@ -5,7 +5,7 @@ import { StyleSheet, Text, View, Image, Alert } from 'react-native';
 import { NFT } from '@thirdweb-dev/sdk'; 
 
 // FIX 2: Import Web3Button from the v4 React Native package
-import { Web3Button } from '@thirdweb-dev/react';
+import { Web3Button } from '@thirdweb-dev/react-native';
 
 // FIX 3: Import the contract address string
 import { GEONFT_CONTRACT_ADDRESS } from '../constants/contracts';

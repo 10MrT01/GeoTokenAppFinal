@@ -13,7 +13,7 @@
     "production": {
       "node": "18.17.0",
       "env": {
-        "EXPO_PUBLIC_THIRDWEB_CLIENT_ID": "19dcd31493b4570ba0238aa33c9c9b1"
+        "EXPO_PUBLIC_THIRDWEB_CLIENT_ID": "e2ee66d4-5a08-4349-86ab-5b6d9e71baf0"
       },
       "android": {
         "buildType": "apk"

@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, ScrollView, ActivityIndicator, Image } from 'react-native';
 
 // FIX 1: Import the correct v4 hooks. 'useAddress' replaces 'useActiveAccount'.
-import { useAddress, useContract, useNFTs, useOwnedNFTs } from "@thirdweb-dev/react";
+import { useAddress, useContract, useNFTs, useOwnedNFTs } from "@thirdweb-dev/react-native";
 
 
 // FIX 2: Import the contract ADDRESS string

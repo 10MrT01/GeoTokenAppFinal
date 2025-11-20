@@ -18,7 +18,7 @@ import {
   useContract,
   useStorage,
   Web3Button
-} from "@thirdweb-dev/react";
+} from "@thirdweb-dev/react-native";
 
 import { GEONFT_CONTRACT_ADDRESS } from "../../constants/contracts";
 

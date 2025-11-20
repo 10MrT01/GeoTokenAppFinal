@@ -1,58 +1,98 @@
-import { StyleSheet, Text, View, Image } from 'react-native'; 
+import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
+import { 
+  useWallet,
+  useConnect,
+  useDisconnect,
+  inAppWallet
+} from "@thirdweb-dev/react-native";
 
-// FIX 1: Import ConnectWallet from the v4 package
-import { ConnectWallet } from "@thirdweb-dev/react";
+import { useEffect, useState } from "react";
 
-// FIX 2: Use the correct path to the logo
-const GeoLogo = require("../../assets/twinnir_logo.png");
- 
 export default function HomeScreen() {
-  return (   
-    <View style={styles.container}>
-      <Image 
-        source={GeoLogo} 
-        style={styles.logo} 
-        resizeMode="contain" 
-      />
-      <Text style={styles.title}>Welcome to GeoTokenApp!</Text>
-      <Text style={styles.subtitle}>Connect your wallet to begin collecting GeoTokens.</Text>
-      
-      {/* FIX 3: Use the v4 ConnectWallet component. 
-          It automatically uses the provider's context. No 'client' prop needed! */}
-      <ConnectWallet 
-        theme="dark"
-        modalTitle="Connect to GeoTokenApp"
-        btnTitle="Connect Wallet"
+  const wallet = useWallet();
+  const connect = useConnect();
+  const disconnect = useDisconnect();
 
-      />
+  const [address, setAddress] = useState<string | null>(null);
+
+  // ✔ Correct wallet config (NO clientId here!)
+  const inApp = inAppWallet();
+
+  // Get address when wallet changes
+  useEffect(() => {
+    (async () => {
+      if (wallet) {
+        const addr = await wallet.getAddress();
+        setAddress(addr);
+      } else {
+        setAddress(null);
+      }
+    })();
+  }, [wallet]);
+
+  const handleConnect = async () => {
+    try {
+      await connect(inApp);   // ✔ valid for your SDK version
+    } catch (e) {
+      console.log("Wallet connection error:", e);
+    }
+  };
+
+  return (
+    <View style={styles.container}>
+      {!wallet ? (
+        <TouchableOpacity style={styles.button} onPress={handleConnect}>
+          <Text style={styles.buttonText}>Connect Wallet</Text>
+        </TouchableOpacity>
+      ) : (
+        <>
+          <Text style={styles.connectedText}>
+            Connected: {address?.slice(0, 6)}...
+          </Text>
+
+          <TouchableOpacity 
+            style={styles.disconnectButton} 
+            onPress={disconnect}
+          >
+            <Text style={styles.disconnectText}>Disconnect</Text>
+          </TouchableOpacity>
+        </>
+      )}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, 
-    alignItems: 'center', 
-    justifyContent: 'center', 
-    backgroundColor: '#1E1E1E',
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
     padding: 20,
   },
-  logo: {
-    width: 150, 
-    height: 150,
-    marginBottom: 40,
+  button: {
+    backgroundColor: "#2e78b7",
+    paddingVertical: 14,
+    paddingHorizontal: 22,
+    borderRadius: 10,
   },
-  title: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    color: '#00D1FF',
-    marginBottom: 10,
-    textAlign: 'center',
-  },
-  subtitle: {
+  buttonText: {
+    color: "white",
     fontSize: 16,
-    color: '#CCCCCC',
-    marginBottom: 40,
-    textAlign: 'center',
+    fontWeight: "bold",
+  },
+  connectedText: {
+    color: "white",
+    fontSize: 16,
+    marginBottom: 20,
+  },
+  disconnectButton: {
+    backgroundColor: "#B00020",
+    paddingVertical: 10,
+    paddingHorizontal: 22,
+    borderRadius: 10,
+  },
+  disconnectText: {
+    color: "white",
+    fontWeight: "bold",
   },
 });

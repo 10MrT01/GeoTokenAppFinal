@@ -1,6 +1,6 @@
 import { Stack } from 'expo-router';
 import { StyleSheet, View } from 'react-native';
-import { ThirdwebProvider } from '@thirdweb-dev/react';
+import { ThirdwebProvider } from '@thirdweb-dev/react-native';
 import { Sepolia } from '@thirdweb-dev/chains';
 
 export default function RootLayout() {
