@@ -2,7 +2,7 @@
   "expo": {
     "name": "GeoTokenAppFinal",
     "slug": "GeoTokenAppFinal",
-    "plugins": ["./with-exclude-coinbase"],
+    "plugins": ["./plugins/with-exclude-coinbase"],
     "owner": "mrtez",
     "version": "1.0.0",
     "orientation": "portrait",
