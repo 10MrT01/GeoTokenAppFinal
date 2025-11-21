@@ -1,0 +1,293 @@
+
+{
+  mods: [90mundefined[39m,
+  dynamicConfigObjectType: [1mnull[22m,
+  dynamicConfigPath: [1mnull[22m,
+  staticConfigPath: [32m'C:\\Users\\Ruben\\The_Geo_APP\\vs_2\\GeoTokenAppFinal\\app.json'[39m,
+  hasUnusedStaticConfig: [33mfalse[39m,
+  exp: {
+    name: [32m'GeoTokenAppFinal'[39m,
+    slug: [32m'GeoTokenAppFinal'[39m,
+    plugins: [
+      [32m'./plugins/with-exclude-coinbase'[39m
+    ],
+    owner: [32m'mrtez'[39m,
+    version: [32m'1.0.0'[39m,
+    orientation: [32m'portrait'[39m,
+    icon: [32m'./assets/twinnir_logo.png'[39m,
+    userInterfaceStyle: [32m'light'[39m,
+    assetBundlePatterns: [
+      [32m'**/*'[39m
+    ],
+    description: [90mundefined[39m,
+    sdkVersion: [32m'50.0.0'[39m,
+    platforms: [
+      [32m'ios'[39m,
+      [32m'android'[39m,
+      [32m'web'[39m
+    ],
+    splash: {
+      image: [32m'./assets/twinnir_logo.png'[39m,
+      resizeMode: [32m'contain'[39m,
+      backgroundColor: [32m'#1E1E1E'[39m
+    },
+    ios: {
+      supportsTablet: [33mtrue[39m,
+      bundleIdentifier: [32m'com.placeholder.appid'[39m
+    },
+    android: {
+      package: [32m'com.tw1nz.GeoTokenAppFinal'[39m,
+      permissions: [
+        [32m'android.permission.RECORD_AUDIO'[39m,
+        [32m'android.permission.READ_EXTERNAL_STORAGE'[39m,
+        [32m'android.permission.WRITE_EXTERNAL_STORAGE'[39m,
+        [32m'android.permission.INTERNET'[39m
+      ],
+      adaptiveIcon: {
+        foregroundImage: [32m'./assets/twinnir_logo.png'[39m,
+        backgroundColor: [32m'#1E1E1E'[39m
+      }
+    },
+    web: {
+      favicon: [32m'./assets/twinnir_logo.png'[39m
+    },
+    extra: {
+      eas: {
+        projectId: [32m'e2ee66d4-5a08-4349-86ab-5b6d9e71baf0'[39m
+      }
+    },
+    _internal: {
+      isDebug: [33mfalse[39m,
+      projectRoot: [32m'C:\\Users\\Ruben\\The_Geo_APP\\vs_2\\GeoTokenAppFinal'[39m,
+      staticConfigPath: [32m'C:\\Users\\Ruben\\The_Geo_APP\\vs_2\\GeoTokenAppFinal\\app.json'[39m,
+      packageJsonPath: [32m'C:\\Users\\Ruben\\The_Geo_APP\\vs_2\\GeoTokenAppFinal\\package.json'[39m,
+      autolinkedModules: [
+        [32m'@coinbase/wallet-mobile-sdk'[39m,
+        [32m'expo'[39m,
+        [32m'expo-application'[39m,
+        [32m'expo-clipboard'[39m,
+        [32m'expo-constants'[39m,
+        [32m'expo-document-picker'[39m,
+        [32m'expo-file-system'[39m,
+        [32m'expo-font'[39m,
+        [32m'expo-image-loader'[39m,
+        [32m'expo-image-picker'[39m,
+        [32m'expo-keep-awake'[39m,
+        [32m'expo-modules-core'[39m,
+        [32m'expo-router'[39m,
+        [32m'expo-secure-store'[39m,
+        [32m'expo-splash-screen'[39m,
+        [32m'expo-system-ui'[39m,
+        [32m'expo-web-browser'[39m
+      ],
+      dynamicConfigPath: {},
+      pluginHistory: {
+        [32m'with-exclude-coinbase'[39m: {
+          name: [32m'with-exclude-coinbase'[39m,
+          version: [32m'1.0.0'[39m
+        },
+        [32m'react-native-maps'[39m: {
+          name: [32m'react-native-maps'[39m,
+          version: [32m'UNVERSIONED'[39m
+        },
+        [32m'expo-ads-admob'[39m: {
+          name: [32m'expo-ads-admob'[39m,
+          version: [32m'UNVERSIONED'[39m
+        },
+        [32m'expo-apple-authentication'[39m: {
+          name: [32m'expo-apple-authentication'[39m,
+          version: [32m'UNVERSIONED'[39m
+        },
+        [32m'expo-contacts'[39m: {
+          name: [32m'expo-contacts'[39m,
+          version: [32m'UNVERSIONED'[39m
+        },
+        [32m'expo-notifications'[39m: {
+          name: [32m'expo-notifications'[39m,
+          version: [32m'UNVERSIONED'[39m
+        },
+        [32m'expo-updates'[39m: {
+          name: [32m'expo-updates'[39m,
+          version: [32m'UNVERSIONED'[39m
+        },
+        [32m'expo-document-picker'[39m: {
+          name: [32m'expo-document-picker'[39m,
+          version: [32m'11.10.1'[39m
+        },
+        [32m'expo-system-ui'[39m: {
+          name: [32m'expo-system-ui'[39m,
+          version: [32m'2.9.4'[39m
+        },
+        [32m'expo-splash-screen'[39m: {
+          name: [32m'expo-splash-screen'[39m,
+          version: [32m'0.26.5'[39m
+        },
+        [32m'expo-navigation-bar'[39m: {
+          name: [32m'expo-navigation-bar'[39m,
+          version: [32m'UNVERSIONED'[39m
+        },
+        [32m'expo-image-picker'[39m: {
+          name: [32m'expo-image-picker'[39m,
+          version: [32m'14.7.1'[39m
+        },
+        [32m'expo-file-system'[39m: {
+          name: [32m'expo-file-system'[39m,
+          version: [32m'16.0.9'[39m
+        }
+      }
+    },
+    mods: {
+      android: {
+        dangerous: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        },
+        manifest: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        },
+        colors: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        },
+        strings: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        },
+        styles: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        },
+        colorsNight: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        },
+        gradleProperties: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        },
+        settingsGradle: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        },
+        projectBuildGradle: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        },
+        appBuildGradle: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        }
+      },
+      ios: {
+        infoPlist: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        },
+        dangerous: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        },
+        appDelegate: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        },
+        entitlements: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        },
+        expoPlist: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        },
+        splashScreenStoryboard: [AsyncFunction: interceptingMod] {
+          isProvider: [33mtrue[39m,
+          isIntrospective: [33mtrue[39m
+        },
+        xcodeproj: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        },
+        podfileProperties: [AsyncFunction: interceptingMod] {
+          isProvider: [33mfalse[39m
+        }
+      }
+    },
+    androidStatusBar: {
+      backgroundColor: [32m'#1E1E1E'[39m
+    }
+  },
+  pkg: {
+    name: [32m'geotokenappfinal'[39m,
+    version: [32m'1.0.0'[39m,
+    main: [32m'expo-router/entry'[39m,
+    private: [33mtrue[39m,
+    scripts: {
+      start: [32m'expo start'[39m,
+      android: [32m'expo run:android'[39m,
+      ios: [32m'expo run:ios'[39m,
+      web: [32m'expo start --web'[39m
+    },
+    dependencies: {
+      [32m'@expo/vector-icons'[39m: [32m'^14.0.0'[39m,
+      [32m'@react-navigation/bottom-tabs'[39m: [32m'^6.5.11'[39m,
+      [32m'@react-navigation/native'[39m: [32m'^6.1.17'[39m,
+      [32m'@react-navigation/stack'[39m: [32m'^6.3.28'[39m,
+      [32m'@thirdweb-dev/chains'[39m: [32m'^0.1.120'[39m,
+      [32m'@thirdweb-dev/react-native'[39m: [32m'^0.8.0'[39m,
+      [32m'@thirdweb-dev/wallets'[39m: [32m'^2.5.39'[39m,
+      eventemitter3: [32m'^5.0.1'[39m,
+      expo: [32m'~50.0.17'[39m,
+      [32m'expo-constants'[39m: [32m'~15.4.6'[39m,
+      [32m'expo-file-system'[39m: [32m'~16.0.9'[39m,
+      [32m'expo-font'[39m: [32m'~11.10.3'[39m,
+      [32m'expo-image-picker'[39m: [32m'~14.7.1'[39m,
+      [32m'expo-linking'[39m: [32m'~6.2.2'[39m,
+      [32m'expo-router'[39m: [32m'~3.4.10'[39m,
+      [32m'expo-splash-screen'[39m: [32m'~0.26.5'[39m,
+      [32m'expo-status-bar'[39m: [32m'~1.11.1'[39m,
+      [32m'expo-system-ui'[39m: [32m'~2.9.4'[39m,
+      [32m'expo-web-browser'[39m: [32m'~12.8.2'[39m,
+      react: [32m'18.2.0'[39m,
+      [32m'react-dom'[39m: [32m'18.2.0'[39m,
+      [32m'react-native'[39m: [32m'0.73.6'[39m,
+      [32m'react-native-gesture-handler'[39m: [32m'^2.14.0'[39m,
+      [32m'react-native-reanimated'[39m: [32m'^3.6.2'[39m,
+      [32m'react-native-safe-area-context'[39m: [32m'^4.8.2'[39m,
+      [32m'react-native-screens'[39m: [32m'^3.29.0'[39m,
+      [32m'react-native-svg'[39m: [32m'14.1.0'[39m,
+      [32m'react-native-web'[39m: [32m'~0.19.6'[39m
+    },
+    devDependencies: {
+      [32m'@babel/core'[39m: [32m'^7.20.0'[39m,
+      [32m'@types/react'[39m: [32m'~18.2.45'[39m,
+      [32m'babel-plugin-module-resolver'[39m: [32m'^5.0.2'[39m,
+      typescript: [32m'^5.1.3'[39m
+    }
+  },
+  rootConfig: {
+    expo: {
+      name: [32m'GeoTokenAppFinal'[39m,
+      slug: [32m'GeoTokenAppFinal'[39m,
+      plugins: [
+        [32m'./plugins/with-exclude-coinbase'[39m
+      ],
+      owner: [32m'mrtez'[39m,
+      version: [32m'1.0.0'[39m,
+      orientation: [32m'portrait'[39m,
+      icon: [32m'./assets/twinnir_logo.png'[39m,
+      userInterfaceStyle: [32m'light'[39m,
+      assetBundlePatterns: [
+        [32m'**/*'[39m
+      ],
+      splash: {
+        image: [32m'./assets/twinnir_logo.png'[39m,
+        resizeMode: [32m'contain'[39m,
+        backgroundColor: [32m'#1E1E1E'[39m
+      },
+      ios: {
+        supportsTablet: [33mtrue[39m
+      },
+      android: {
+        package: [32m'com.tw1nz.GeoTokenAppFinal'[39m,
+        adaptiveIcon: {
+          foregroundImage: [32m'./assets/twinnir_logo.png'[39m,
+          backgroundColor: [32m'#1E1E1E'[39m
+        }
+      },
+      web: {
+        favicon: [32m'./assets/twinnir_logo.png'[39m
+      },
+      extra: {
+        eas: {
+          projectId: [32m'e2ee66d4-5a08-4349-86ab-5b6d9e71baf0'[39m
+        }
+      }
+    }
+  }
+}
+
